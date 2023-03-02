@@ -6,3 +6,8 @@ services:
     ports:
       - 1080:80
       - 25:25
+  ssh:
+    container_name: ssh-sec2
+    image: rastasheep/ubuntu-sshd
+    ports:
+      - 2222:22
